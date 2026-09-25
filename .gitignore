@@ -1,0 +1,47 @@
+# Python bytecode, packaging, test cache, virtual environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+venv/
+
+# Data, results and run outputs. These are never committed. The patterns are anchored at the repository root and
+# have no trailing slash, so they also match these names when they are symlinks to a larger disk (a pattern like
+# `data/` matches only a real directory and would let a symlink through).
+/data
+/raw
+/dataset
+/results
+/checkpoints
+/logs
+/videos
+/scratch
+*.npz
+*.npy
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.sif
+FSI_REPORT.tex
+
+# Site-specific configuration. Copy cluster.env.example to cluster.env and keep your real values there.
+cluster.env
+.env
+
+# Private working material that may sit next to a checkout
+/final_paper
+/papers
+/docs/research
+/docs/0*_*.md
+
+# Editor and OS noise
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
